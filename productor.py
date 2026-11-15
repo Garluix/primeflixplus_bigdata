@@ -11,11 +11,16 @@ if len(sys.argv) > 1: # cantidad de eventos
 else:
     N = 5000
 
+if len(sys.argv) > 2: # semilla (opcional)
+    SEMILLA = int(sys.argv[2])
+else:
+    SEMILLA = 42
+
 TOPICO = "reproducciones_terror"
 SERVIDOR = "localhost:9092"
 PROB_CALIDAD = 0.05          # 5% de eventos con minutos_vistos defectuoso
 ANIO = 2026
-random.seed(42)              # resultados reproducibles
+random.seed(SEMILLA)         # resultados reproducibles
 
 # Reglas del patrón
 MESES = [7, 8, 9, 10, 11, 12]
