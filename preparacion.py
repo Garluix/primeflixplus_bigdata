@@ -32,4 +32,12 @@ print(f"Registros iniciales (antes): {conteo_inicial}")
 print(f"Registros finales (después): {conteo_final}")
 print(f"Registros defectuosos eliminados: {conteo_inicial - conteo_final}")
 
+# Muestra del esquema con la variable timestamp transformada
+print("\n--- Esquema del Dataframe tras la limpieza---")
+df.printSchema()
+
+# Muestra pequeña de los datos limpios
+print("\n--- DataFrame después de la limpieza ---")
+df_limpio.show(10)
+
 spark.stop()
