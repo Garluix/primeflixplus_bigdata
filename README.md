@@ -39,9 +39,9 @@ Pasos exactos para levantar el proyecto en local:
    
 2. Creación y activación de un entorno virtual:
    python -m venv .venv
-# En Windows:
+En Windows:
 .venv\Scripts\activate
-# En Linux/macOS:
+En Linux/macOS:
 source .venv/bin/activate
 
 3. Instalar las dependencias:
