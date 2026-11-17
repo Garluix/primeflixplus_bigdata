@@ -36,17 +36,22 @@ Pasos exactos para levantar el proyecto en local:
 
 1. Clona el repositorio:
    git clone [https://github.com/Garluix/primeflixplus_bigdata.git]
+   
 2. Creación y activación de un entorno virtual:
    python -m venv .venv
 # En Windows:
 .venv\Scripts\activate
 # En Linux/macOS:
 source .venv/bin/activate
+
 3. Instalar las dependencias:
    pip install confluent-kafka pyspark matplotlib pandas
+   
 4. Ejecutar el Productor para enviar eventos a Kafka:
    python productor.py
+   
 5. Ejecuta el Consumidor para guardar los eventos en eventos.jsonl:
    python consumidor_2.py
+   
 6. Ejecuta el procesamiento y análisis en PySpark (preparacion.py):
    python preparacion.py
